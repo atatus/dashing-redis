@@ -1,5 +1,7 @@
 ## Redis widget to Dashing
 
+Kudos to [Wan Qi Chen](https://gist.github.com/wa0x6e/6564362)
+
 [Dashing](http://shopify.github.com/dashing) widget to display the number of
 connected clients to a [redis](http://redis.io/) server, as well as the instance
 memory usage.
