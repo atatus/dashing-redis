@@ -24,11 +24,13 @@ and run `bundle install`.
 
 3. Now copy over the `redis.yml` into the root directory of your Dashing application. Be sure to replace the following options inside of the config file:
 
-    :redis_host: localhost:6379
-    :redis_password: 'your master password'
-    (or)
-    :redis_host: /tmp/redis.sock
-    :redis_password: 'your master password'
+```
+:redis_host: localhost:6379
+:redis_password: 'your master password'
+(or)
+:redis_host: /tmp/redis.sock
+:redis_password: 'your master password'
+```
 
 4. copy `redis-background.png` into your `/assets/images/` folder
 
