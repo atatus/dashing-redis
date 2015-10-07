@@ -5,9 +5,15 @@ class Dashing.Redis extends Dashing.Widget
         $(@node).find(".value").before("<div class='gauge'></div>")
         $(@node).find(".gauge").append("<div class='gauge-meter'></div>")
         @meter = $(@node).find(".gauge-meter");
+        @animateData()
 
     onData: (data) ->
-        @meter.animate({height: Batman.mixin Batman.Filters.percentage(data.value, @get("max")) + "%"})
+        @data = data
+        @animateData()
+
+    animateData: =>
+        if @meter and @data
+            @meter.animate({height: Batman.mixin Batman.Filters.percentage(@data.value, @get("max")) + "%"})
 
     @accessor "total", ->
         @get("max")
