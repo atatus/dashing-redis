@@ -34,7 +34,7 @@ $meter-background:  darken($background-color, 15%);
 
     .gauge-meter, .gauge::after {
         display: block;
-        background: url("/assets/images/redis-background.png") repeat-y center bottom;
+        background: url("/assets/redis-background.png") repeat-y center bottom;
     }
 
     .gauge::after {
